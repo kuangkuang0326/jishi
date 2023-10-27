@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @media screen and (max-width:720px) {
+            .box1 {
+                justify-content: center !important;
+            }
+
+            .container2 {
+                display: none;
+            }
+
+            .menu {
+                position: absolute;
+                left: 10px;
+            }
+        }
+
+        @media screen and (min-width:720px) {
+            .menu {
+                display: none;
+            }
+
+            .box4 {
+                display: none;
+            }
+        }
+
+        .box1 {
+            display: flex;
+            justify-content: space-between;
+            position: fixed;
+            top: 0;
+            height: 10vh;
+            width: 100%;
+            background-color: #f2e3a8;
+            border-top: 2px white solid;
+            line-height: 10vh;
+        }
+
+        .container1 h1 {
+            margin-left: 20px;
+
+        }
+
+        .container2 {
+            height: 10vh;
+            font-size: 20px;
+            position: relative;
+            right: 10px;
+        }
+
+
+
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        .box2 {
+            background-color: #696351;
+            height: 80vh;
+            color: white;
+            margin-top: 10vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .container3 {
+            background-color: #696351;
+        }
+
+        #container5-bot {
+            height: 26px;
+            border: 1px white solid;
+            padding: 5px;
+            color: white;
+        }
+
+        .box3 {
+            background-color: black;
+            height: 10vh;
+            color: white;
+            font-size: small;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* li { */
+        /* height: 30px; */
+        /* width: 100px; */
+        /* line-height: 30px; */
+        /* font-size: 20px; */
+        /* color: white; */
+        /* background-color: gray; */
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* text-decoration: none; */
+        /* text-align: center; */
+        /* } */
+
+        /* .menu:hover .box4 { */
+        /* display: block; */
+        /* background-color: #f1e4e4; */
+        /* text-decoration: underline; */
+        /* } */
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">
+        <div class="menu"> &#9776;</div>
+        <div class="container1">
+            <a href="#">
+                <h1>木犀前端</h1>
+            </a>
+        </div>
+        <div class="container2">
+            <a href="#">最新消息</a>
+            <a href="#">关于我们</a>
+            <a href="#">组员列表</a>
+            <a href="#">学习规划</a>
+        </div>
+    </div>
+    <div class="box2">
+        <div class="container3">
+            <h1>欢迎来到木犀2023秋机试!</h1>
+        </div>
+        <div class="container4">
+            <p>我将要作为困难题的一员来防守</p>
+            <p>有看我第三次直播或翻过我给的文档这题应该对你来说非常ez</p>
+            <p>目标是实现响应式导航栏,下面两题就当作加分题</p>
+        </div>
+        <div class="container5">
+            <bottom id="container5-bot">了解更多</bottom>
+        </div>
+    </div>
+    </div>
+    <div class="box3">
+        <p>Copyright 2023 木犀前端 ALL Rights Reserved</p>
+    </div>
+    <!-- <div class="box4"> -->
+    <!-- <li><a href="#">最新消息</a></li> -->
+    <!-- <li><a href="#">关于我们</a></li> -->
+    <!-- <li><a href="#">组员列表</a></li> -->
+    <!-- <li><a href="#">学习规划</a></li> -->
+    <!-- </div> -->
+</body>
+
+</html>

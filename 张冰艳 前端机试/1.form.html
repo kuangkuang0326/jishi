@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cantainer {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            background-color: #eaf5f8;
+            padding: 16px;
+        }
+
+        .title {
+            align-self: center;
+
+        }
+
+        .box {
+            display: flex;
+            flex-direction: column;
+            width: 50vw;
+            height: 80vh;
+            overflow-y: scroll;
+            gap: 20px;
+            padding: 16px;
+            background-color: #fff;
+            box-shadow: 5px 5px white;
+        }
+
+        .name {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        #name-input {
+            box-shadow: 1px 1px rgb(221, 239, 248);
+            width: 300px;
+            height: 20px;
+        }
+
+        .hobby {
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        .sex {
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        #text-content {
+            box-shadow: 1px 1px rgb(221, 239, 248);
+            resize: none;
+        }
+
+        .submit {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 200px;
+            height: 60px;
+            background-color: rgb(13, 62, 139);
+            border-radius: 10px;
+            position: absolute;
+            bottom: 10%;
+        }
+
+        .submit-btn {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="cantainer">
+
+
+        <div class="box">
+
+            <h1 class="title">招新的表单</h1>
+
+            <div class="name">
+                <div class="name-title">姓名: </div>
+                <div class="name-content">
+                    <input type="text" name="name" id="name-input">
+                </div>
+            </div>
+
+            <div class="hobby">
+                <div class="hobby-title">爱好：</div>
+                <div class="hobby-content">
+                    <input type="checkbox" disabled="disabled">睡觉
+                    <input type="checkbox">学前端
+                    <input type="checkbox">吃吃吃
+                </div>
+            </div>
+
+            <div class="sex">
+                <div class="sex-title">性别:</div>
+                <div class="sex-content">
+                    <input type="radio" name="sex" value="xiao" id="nan">
+                    <label for="nan">男</label>
+                    <input type="radio" name="sex" id="nv">
+                    <label for="nv">女</label>
+                    <input type="radio" name="sex" id="wuzhuang">
+                    <label for="wuzhuang">武装直升机</label>
+                </div>
+            </div>
+
+            <div class="comment">评论:</div>
+            <div class="text">
+                <textarea rows="40" cols="45" id="text-content"></textarea>
+            </div>
+        </div>
+
+        <div class="submit">
+            <div class="submit-btn">提交</div>
+        </div>
+    </div>
+
+</body>
+
+</html>
